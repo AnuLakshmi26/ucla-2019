@@ -20,43 +20,63 @@
 # 6) talk to instructors when finished
 
 import math
-print("  0 - add")
-print("  1 - subract")
-print("  2 - multiply")
-print("  3 - divide")
-print("  4 - power")
-print("  5 - square root")
-print("  6 - factorial")
-print("  7 - fibonacci")
+print("                CALCULATOR  ")
+print("                 0 - add")
+print("                 1 - subract")
+print("                 2 - multiply")
+print("                 3 - divide")
+print("                 4 - power")
+print("                 5 - square root")
+print("                 6 - factorial")
+print("                 7 - fibonacci")
+ans="yes"
 
-# print("Enter a number to choose an operation:")
-op = int(input("Enter a number to choose an operation:"))
-a = int(input("Enter your first input: "))
-if op==5 or op==6:
-    if op==5:
-        print(math.sqrt(a))
-    else:
-        print(math.factorial(a))
-elif op<5:
-    b = int(input("Enter your second input: "))  
-    if op == 0:
-        print(a+b)
-    elif op == 1:
-        print(a-b)
-    elif(op==2):
-        print(a*b)    
-    elif(op==3):
-        if(a>b):
-            print(a/b)
-        else:
-            print(b/a)     
-    elif(op==4):
-        print(a**b)
-elif op==7:
-    
-else:
-    print("Invalid loop")    
+
+
+while ans=="yes" :
+    op = int(input("                Enter a number to choose an operation:"))
+    if op==7:
+        nterm=int(input("           Input the number of terms:"))
+        n1=0
+        n2=1
+        count=0
+        while(count<nterm):
+            print(n1,",")
+            nth=n1+n2
+            n1=n2
+            n2=nth
+            count=count+1
+    else:        
+
+        a = int(input("                 Enter the number: "))
+        if op==5 or op==6:
+            if op==5:
+                print(math.sqrt(a))
+            else:
+                print(math.factorial(a))
+        elif op<5:
+            b = int(input("         Enter your second input: "))  
+            if op == 0:
+                print(a+b)
+            elif op == 1:
+                print(a-b)
+            elif(op==2):
+                print(a*b)    
+            elif(op==3):
+                if(a>b):
+                    print(a/b)
+                else:
+                    print(b/a)     
+            elif(op==4):
+                print(a**b)
+            else:
+                 print("            Invalid loop")  
+    ans=input("                      Do you want to use it again ? ")             
+#END OF CALCULATOR          
          
+
+
+
 
 
 
@@ -72,23 +92,7 @@ else:
 
 
 
-# 
-# while op!=quit:
-#     
-#     if(op==5):
-#         print(Math.sqrt(a))  
-#     else: 
-#         b = int(input("Enter your second input: "))   
-#     
-#     
-#       
-#     
-#     
-#     elif(op==6):
-#         for(int i=1;i<=a;i++):
-#     else:
-#         print("Invalid choice")             
-    
+
         
     
 
@@ -104,5 +108,3 @@ else:
 
 
 
-
-#END OF CALCULATOR
